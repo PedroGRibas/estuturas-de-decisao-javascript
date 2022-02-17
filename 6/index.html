@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atividade</title>
+</head>
+<body>
+    <script>
+        let escolhaExercicio = prompt("Digite o exercício desejado: ")
+        switch (parseInt(escolhaExercicio)){
+            case 1:
+                let nomeEx1 = prompt("Digite seu nome")
+                let salario = prompt("Digite seu salário")
+                const salarioFinal = parseInt(salario) + (parseInt(salario)*0.10)
+                alert ("Seu novo salário é: R$" + salarioFinal)
+            break;
+            case 2:
+                let a = prompt("Digite um número: ")
+                let b = prompt("Digite um número: ")
+                a == b ?alert(parseInt(a)+parseInt(b)):alert(parseInt(a)*parseInt(b)) 
+            break;
+            case 3:
+                let precoaVista = prompt("Digite o preço à vista: ")
+                let parcelas = prompt("Digite o número de parcelas: ")
+                switch (parseInt(parcelas)){
+                    case 3:
+                        alert((parseInt(precoaVista) + parseInt(precoaVista) * 0.10) + " É o novo valor! ")
+                    break
+                    case 5:
+                    alert((parseInt(precoaVista) + parseInt(precoaVista) * 0.20) + " É o novo valor! ")
+                    break
+                    default:
+                        alert("Os valores possíveis de parcelamento são apenas 3 e 5!");
+                    break
+              }   
+            break;  
+            case 4:
+                const nomeEx4 = prompt("Digite seu nome:")
+                let nota1 = parseInt(prompt("Digite a sua nota: "));
+                let nota2 = parseInt(prompt("Digite a sua nota: "));
+                let nota3 = parseInt(prompt("Digite a sua nota: "));
+
+                (nota1+nota2+nota3)/3 >= 7?alert("Aprovado!"):alert("Reprovado!")
+            
+            break;
+            case 5:
+                let numero1 = parseInt(prompt("Digite um número: "));
+                let meses = ['janeiro','fevereiro','março','abril','ma  io','junho','julho','agosto','setembro','outubro','novembro','dezembro']
+                numero1 >12? alert("O número deve ser entre 1 e 12!"):alert("O mês é: " + meses[numero1-1])
+            break;
+            default:
+                alert("O número deve ser de 1 a 5!")
+            break
+        }
+    </script>
+</body>
+</html>
