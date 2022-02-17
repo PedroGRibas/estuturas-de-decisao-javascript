@@ -1,1 +1,2 @@
-# estuturas-de-decisao-javascript
+# projeto desenvolvido em sala de aula para revisão de matéria.
+
